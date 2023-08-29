@@ -4,6 +4,7 @@ date: 2023-08-29T02:17:43+03:30
 draft: false
 toc: true
 mathjax: true
+image: /images/posts/primer_design.png
 ---
 
 # Why Do We Design Primers?
