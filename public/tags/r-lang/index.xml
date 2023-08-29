@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R Lang on rahriver</title>
+    <link>https://example.org/tags/r-lang/</link>
+    <description>Recent content in R Lang on rahriver</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 27 Aug 2023 19:07:04 +0330</lastBuildDate><atom:link href="https://example.org/tags/r-lang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My DESeq2 Workflow</title>
+      <link>https://example.org/posts/deseq2/</link>
+      <pubDate>Sun, 27 Aug 2023 19:07:04 +0330</pubDate>
+      
+      <guid>https://example.org/posts/deseq2/</guid>
+      <description>Hi</description>
+    </item>
+    
+  </channel>
+</rss>
