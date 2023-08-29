@@ -2,39 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/posts/jj/</loc>
+    <loc>https://rahriver.github.io/posts/jj/</loc>
     <lastmod>2023-08-29T03:07:05+03:30</lastmod>
   </url><url>
-    <loc>https://example.org/posts/</loc>
+    <loc>https://rahriver.github.io/posts/</loc>
     <lastmod>2023-08-29T03:07:05+03:30</lastmod>
   </url><url>
-    <loc>https://example.org/</loc>
+    <loc>https://rahriver.github.io/</loc>
     <lastmod>2023-08-29T03:07:05+03:30</lastmod>
   </url><url>
-    <loc>https://example.org/tags/ecology/</loc>
+    <loc>https://rahriver.github.io/tags/ecology/</loc>
     <lastmod>2023-08-29T02:32:14+03:30</lastmod>
   </url><url>
-    <loc>https://example.org/posts/oft/</loc>
+    <loc>https://rahriver.github.io/posts/oft/</loc>
     <lastmod>2023-08-29T02:32:14+03:30</lastmod>
   </url><url>
-    <loc>https://example.org/tags/</loc>
+    <loc>https://rahriver.github.io/tags/</loc>
     <lastmod>2023-08-29T02:32:14+03:30</lastmod>
   </url><url>
-    <loc>https://example.org/posts/primer_design/</loc>
+    <loc>https://rahriver.github.io/posts/primer_design/</loc>
     <lastmod>2023-08-29T02:17:43+03:30</lastmod>
   </url><url>
-    <loc>https://example.org/tags/deseq2/</loc>
+    <loc>https://rahriver.github.io/tags/deseq2/</loc>
     <lastmod>2023-08-27T19:07:04+03:30</lastmod>
   </url><url>
-    <loc>https://example.org/posts/deseq2/</loc>
+    <loc>https://rahriver.github.io/posts/deseq2/</loc>
     <lastmod>2023-08-27T19:07:04+03:30</lastmod>
   </url><url>
-    <loc>https://example.org/tags/r-lang/</loc>
+    <loc>https://rahriver.github.io/tags/r-lang/</loc>
     <lastmod>2023-08-27T19:07:04+03:30</lastmod>
   </url><url>
-    <loc>https://example.org/tags/rna-seq-analysis/</loc>
+    <loc>https://rahriver.github.io/tags/rna-seq-analysis/</loc>
     <lastmod>2023-08-27T19:07:04+03:30</lastmod>
   </url><url>
-    <loc>https://example.org/categories/</loc>
+    <loc>https://rahriver.github.io/categories/</loc>
   </url>
 </urlset>

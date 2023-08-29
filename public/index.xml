@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rahriver</title>
-    <link>https://example.org/</link>
+    <link>https://rahriver.github.io/</link>
     <description>Recent content on rahriver</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Aug 2023 03:07:05 +0330</lastBuildDate><atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Aug 2023 03:07:05 +0330</lastBuildDate><atom:link href="https://rahriver.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JJ</title>
-      <link>https://example.org/posts/jj/</link>
+      <link>https://rahriver.github.io/posts/jj/</link>
       <pubDate>Tue, 29 Aug 2023 03:07:05 +0330</pubDate>
       
-      <guid>https://example.org/posts/jj/</guid>
+      <guid>https://rahriver.github.io/posts/jj/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Optimal foraging theory</title>
-      <link>https://example.org/posts/oft/</link>
+      <link>https://rahriver.github.io/posts/oft/</link>
       <pubDate>Tue, 29 Aug 2023 02:32:14 +0330</pubDate>
       
-      <guid>https://example.org/posts/oft/</guid>
+      <guid>https://rahriver.github.io/posts/oft/</guid>
       <description>Optimal foraging theory (OFT) is a behavioral ecology model that helps predict how an animal behaves when searching for food. Although obtaining food provides the animal with energy, searching for and capturing the food require both energy and time. To maximize fitness, an animal adopts a foraging strategy that provides the most benefit (energy) for the lowest cost, maximizing the net energy gained. OFT helps predict the best strategy that an animal can use to achieve this goal.</description>
     </item>
     
     <item>
       <title>Primer Design</title>
-      <link>https://example.org/posts/primer_design/</link>
+      <link>https://rahriver.github.io/posts/primer_design/</link>
       <pubDate>Tue, 29 Aug 2023 02:17:43 +0330</pubDate>
       
-      <guid>https://example.org/posts/primer_design/</guid>
+      <guid>https://rahriver.github.io/posts/primer_design/</guid>
       <description>Why Do We Design Primers? Primers are short (usually 18-27 bp), single-stranded DNA sequences that are complementary to the target DNA sequence. They are essential components in the Polymerase Chain Reaction (PCR) process, which amplifies a specific fragment of DNA. The main reasons why we design primers for PCR are:
 1.Specificity: Primers ensure that only the region of interest is amplified and not other regions with similar sequences. Specific primers improve the accuracy of PCR and reduce false-positive results.</description>
     </item>
     
     <item>
       <title>My DESeq2 Workflow</title>
-      <link>https://example.org/posts/deseq2/</link>
+      <link>https://rahriver.github.io/posts/deseq2/</link>
       <pubDate>Sun, 27 Aug 2023 19:07:04 +0330</pubDate>
       
-      <guid>https://example.org/posts/deseq2/</guid>
+      <guid>https://rahriver.github.io/posts/deseq2/</guid>
       <description>Hi</description>
     </item>
     
