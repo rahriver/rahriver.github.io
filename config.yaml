@@ -119,8 +119,8 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Ramin."
-    subtitle: "Molecular Biology Undergrad."
-    content: "A passionate Bioinformatics researcher."
+    subtitle: "Bioinformatics Researcher"
+    # content: "A passionate Bioinformatics researcher."
     image: /images/head.jpg
     bottomImage:
       enable: true
@@ -128,7 +128,7 @@ params:
     button:
       enable: true
       name: "🖋️ My C.V."
-      url: "#"
+      url: "https://drive.google.com/file/d/1lNPsyrigvvmAwvJwp9cMN0Yq-tNlGQJW/view?usp=sharing"
       download: true
       newPage: false
     socialLinks:
@@ -143,19 +143,19 @@ params:
   # About
   about:
     enable: true
-    title: "🧬 About Me"
-    image: "/images/about_me.jpg"
-    content: |-
-      I am a Bioinformatics researcher.
+    title: "</> About Me"
+    # image: "/images/about_me.jpg"
+    # content: |-
+      # Bioinformatics researcher.
     skills:
       enable: true
-      title: "Here are a few technologies that I've been working with recently:"
+      title: "Here are a few technologies that I work with:"
       items:
-        - "Python (scikit-learn, PyTorch, NumPy, Pandas, BioPython, Matplotlib, PyQt5, OpenCV)"
-        - "R (Shiny, DESeq2, GOEnrich, ggplot2)"
-        - "ML (Supervised, Unsupervised)"
-        - "DL (Neural Networks)"
-        - "Shell Scripting"
+        - "Python (scikit-learn, PyTorch, BioPython, PyQt5)"
+        - "R (DESeq2, GOEnrich, WGCNA, ggplot2)"
+        - "Machine Learning"
+        - "Deep Learning (CNN)"
+        - "Shell"
         - "Linux"
         - "Git"
         - "LaTeX"
@@ -250,7 +250,7 @@ params:
         featuredLink:
           enable: true
           name: "Transcript of Grades"
-          url: "https://example.com"
+          url: "https://drive.google.com/file/d/1sBwCxYOzPZutZtleYynClRg6AKEtw9ct/view?usp=sharing"
 
       - title: "💬 TOEFL iBT Test"
         school:
@@ -270,11 +270,16 @@ params:
         image: /images/publications/smart.png
         
       - title: "Enhancing Fetal Anomaly Detection in Ultrasound Images: A Review of Machine Learning-Based Approaches"
-        content: Invited Review | MDPI Biomimetics (IF=4.5, Q2) | 2023
+        content: Submitted | MDPI Biomimetics (IF=4.5, Q2) | 2023
         image: /images/publications/fetal.jpg
         
+      - title: "CRISPR-mediated Genome Engineering: Breakthroughs and Challanges"
+        content: Submitted | Transgenic Research (IF=3.14, Q2) | 2023
+        # url: https://example.com
+        image: /images/publications/crispr.png
+
       - title: "Comprehensive Analysis of Tay-Sachs and Niemann-Pick Disease: Shared and Distinct Genes and Pathways"
-        content: Invited | MDPI Information (IF=3.1, Q2) | 2023
+        content: To be submitted | MDPI Information (IF=3.1, Q2) | 2023
         # url: "https://github.com/gurusabarish/hugo-profile"
         image: /images/publications/tay.jpg
         
@@ -291,52 +296,80 @@ params:
     enable: true
     title: "⚙️ Projects"
     items:
+
+      - title: Arch Linux for Scientists
+        content: Configuration and bootstrap for Arch Linux, customized for scientists and researchers who use Linux as their primary operating system
+        image: /images/projects/archlinux.png
+        featured:
+          name: GitHub
+          link: https://www.github.com/rahriver/Arch-Linux
+        badges:
+          - "57 ⭐"
+          - "Linux"
+          - "Shell"
+          - "Python"
+        # links:
+        #   - icon: fab fa-reddit
+        #   - url: https://www.reddit.com/r/unixporn/comments/zahhip/i3gaps_arch_config_for_scientists/
+
+      - title: Rofi Noter
+        content: A bash script that facilitates seamless management of notes on Linux.
+        image: /images/projects/rofi-noter.png
+        featured:
+          name: GitHub
+          link: https://www.github.com/rahriver/rofi-noter
+        badges:
+          - "23 ⭐"
+          - "Shell"
+          - "Linux"
+        # links:
+        #   - icon: fab fa-reddit
+        #   - url: "https://www.reddit.com/r/unixporn/comments/11fzd37/rofi_notetaking_manager/"
+
       - title: Primer X
-        content: A workspace to perform quality analysis on primers using the Primer3 and Shiny libraries
+        content: R-Shiny interface to perform primer quality analysis using the Primer3 library.
         image: /images/projects/primerx.png
         featured:
-          name: Repo
+          name: GitHub
           link: https://www.github.com/rahriver/primerx
         badges:
           - "R"
           - "Primer 3"
           - "Shiny"
 
-      - title: Rofi Noter
-        content: A bash script that facilitates seamless management of notes for users.
-        image: /images/projects/rofi.png
-        featured:
-          name: Repo
-          link: https://github.com/rahriver/rofi-noter
-        badges:
-          - "Shell"
-          - "Linux"
-
-      - title: Arch Linux for Scientists
-        content: Configuration and bootstrap for arch Linux, aimed at scientists and researchers who use Linux as their primary operating system
-        image: /images/projects/arch.png
-        featured:
-          name: Repo
-          link: https://github.com/rahriver/Arch-Linux
-        badges:
-          - "Linux"
-          - "Shell"
-          - "Python"
-          - "Vim Script"
-
       - title: <Genome/X>
         content: GUI user interface for Biopython and other bioinformatics related Python packages.
         image: /images/projects/genomex.png
         featured:
-          name: Repo
-          link: https://github.com/rahriver/Genome-X
+          name: GitHub
+          link: https://www.github.com/rahriver/Genome-X
         badges:
           - "Python"
           - "Biopython"
           - "PyQT5"
-        links:
-          - icon: fab fa-telegram
-          - url: google.com
+
+      - title: Academ.AI
+        content: This Python script is designed to scrape Google Scholar, allowing users to extract research titles and abstracts from any scholar's profile. It also has the capability to generate graphs that visualize the similarities between these research titles
+        image: /images/projects/academai.png
+        featured:
+          name: GitHub
+          link: https://www.github.com/rahriver/Academ.AI
+        badges:
+          - "Python"
+          - "beautifulsoup"
+          - "Universal sentence encoder"
+          - "Spacy"
+
+      - title: Ankinator
+        content: Extract new words from text files, and create Anki flash cards out of them.
+        image: /images/projects/anki.png
+        featured:
+          name: GitHub
+          link: https://www.github.com/rahriver/Ankinator
+        badges:
+          - "6 ⭐"
+          - "Python"
+          - "Anki"
 
   #Contact
   contact:
@@ -344,7 +377,7 @@ params:
     title: "📞 Contact"
     # content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
     email: ramin.y.shahrivar@gmail.com
-    btnName: "📩 Mail me"
+    btnName: "📩 Email me"
     # formspree:
     #   enable: true # `contact.email` value will be ignored
     #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
