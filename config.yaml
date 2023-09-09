@@ -119,8 +119,8 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Ramin."
-    subtitle: "Bioinformatics Researcher"
-    # content: "A passionate Bioinformatics researcher."
+    subtitle: "A Bioinformatics Researcher"
+    content: "I'm a passionate FOSS (Free and Open Source Software) enthusiast, and I love using and developing open-source tools for analyzing biological data."
     image: /images/head.jpg
     bottomImage:
       enable: true
@@ -386,7 +386,7 @@ params:
 
   footer:
     recentPosts:
-      path: "blogs"
+      path: "posts"
       count: 3
       title: Recent Posts
       enable: true
