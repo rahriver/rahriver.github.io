@@ -72,7 +72,7 @@ params:
   animate: true
 
   # Make nav bar sticky
-  stickyNav: true
+  stickyNav: false
 
   theme:
     # disableThemeToggle: false
