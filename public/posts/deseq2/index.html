@@ -29,7 +29,8 @@
 
 
 <meta property="og:title" content="My DESeq2 Workflow" />
-<meta property="og:description" content="Hi" />
+<meta property="og:description" content="Differential Gene Expression I use this code to run DESeq2 for evey differential gene expression analysis I have:
+library(DESeq2) library(biomaRt) library(DEGreport) library(ggplot2) library(dplyr) # Load data setwd(&#39;/home/&lt;directory&gt;&#39;) cts &lt;- read.delim(&#39;counts_data.csv&#39;, sep=&#39;,&#39;, header = TRUE, row.names = 1) condition &lt;- factor(c(&#34;Control&#34;, &#34;Control&#34;, &#34;Control&#34;, &#34;Control&#34;, &#34;Control&#34;, &#34;Control&#34;, &#34;Control&#34;, &#34;Control&#34;, &#34;Control&#34;, &#34;Control&#34;, &#34;Disease&#34;, &#34;Disease&#34;, &#34;Disease&#34;, &#34;Disease&#34;, &#34;Disease&#34;, &#34;Disease&#34;, &#34;Disease&#34;, &#34;Disease&#34;, &#34;Disease&#34;)) coldata &lt;- data.frame(row.names = colnames(cts), condition) Groups &lt;- make.names(c(&#34;Control&#34;, &#34;Disease&#34;)) keep &lt;- rowSums(cts &gt;= 10) &gt;= min(table(coldata)) cts &lt;- cts[keep, ] dds &lt;- DESeqDataSetFromMatrix(countData = round(cts), colData = coldata, design = ~condition) dds &lt;- DESeq(dds) # Save all the results res &lt;- results(dds, contrast = c(&#34;condition&#34;, Groups[2], Groups[1]), alpha = 0." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://rahriver.github.io/posts/deseq2/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-08-27T19:07:04+03:30" />
@@ -37,7 +38,8 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="My DESeq2 Workflow"/>
-<meta name="twitter:description" content="Hi"/>
+<meta name="twitter:description" content="Differential Gene Expression I use this code to run DESeq2 for evey differential gene expression analysis I have:
+library(DESeq2) library(biomaRt) library(DEGreport) library(ggplot2) library(dplyr) # Load data setwd(&#39;/home/&lt;directory&gt;&#39;) cts &lt;- read.delim(&#39;counts_data.csv&#39;, sep=&#39;,&#39;, header = TRUE, row.names = 1) condition &lt;- factor(c(&#34;Control&#34;, &#34;Control&#34;, &#34;Control&#34;, &#34;Control&#34;, &#34;Control&#34;, &#34;Control&#34;, &#34;Control&#34;, &#34;Control&#34;, &#34;Control&#34;, &#34;Control&#34;, &#34;Disease&#34;, &#34;Disease&#34;, &#34;Disease&#34;, &#34;Disease&#34;, &#34;Disease&#34;, &#34;Disease&#34;, &#34;Disease&#34;, &#34;Disease&#34;, &#34;Disease&#34;)) coldata &lt;- data.frame(row.names = colnames(cts), condition) Groups &lt;- make.names(c(&#34;Control&#34;, &#34;Disease&#34;)) keep &lt;- rowSums(cts &gt;= 10) &gt;= min(table(coldata)) cts &lt;- cts[keep, ] dds &lt;- DESeqDataSetFromMatrix(countData = round(cts), colData = coldata, design = ~condition) dds &lt;- DESeq(dds) # Save all the results res &lt;- results(dds, contrast = c(&#34;condition&#34;, Groups[2], Groups[1]), alpha = 0."/>
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -138,7 +140,7 @@ My DESeq2 Workflow | rahriver
 
 
 <header>
-    <nav class="pt-3 navbar navbar-expand-lg animate">
+    <nav class="fixed-top pt-3 navbar navbar-expand-lg animate">
         <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
             
             <a class="navbar-brand primary-font text-wrap" href="/">
@@ -178,7 +180,7 @@ My DESeq2 Workflow | rahriver
                     
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="/#about" aria-label="about">
-                            🧬 About Me
+                            &lt;/&gt; About Me
                         </a>
                     </li>
                     
@@ -213,13 +215,6 @@ My DESeq2 Workflow | rahriver
                     
 
                     
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/#contact"
-                            aria-label="contact">
-                            📞 Contact
-                        </a>
-                    </li>
-                    
 
                     
                     
@@ -229,16 +224,6 @@ My DESeq2 Workflow | rahriver
                         <a class="nav-link" href="/posts" title="Blog posts">
                             
                             📰 Blog
-                        </a>
-                    </li>
-                    
-                    
-                    
-                    
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/gallery" title="Blog posts">
-                            
-                            Gallery
                         </a>
                     </li>
                     
@@ -300,8 +285,209 @@ My DESeq2 Workflow | rahriver
           </div>
           
           <article class="page-content  p-2">
-          <p>Hi</p>
-
+          <h1 id="differential-gene-expression">Differential Gene Expression</h1>
+<p>I use this code to run DESeq2 for evey differential gene expression analysis I have:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(DESeq2)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(biomaRt)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(DEGreport)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(ggplot2)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(dplyr)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Load data</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">setwd</span>(<span style="color:#e6db74">&#39;/home/&lt;directory&gt;&#39;</span>)
+</span></span><span style="display:flex;"><span>cts <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read.delim</span>(<span style="color:#e6db74">&#39;counts_data.csv&#39;</span>, sep<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;,&#39;</span>, header <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>, row.names <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>condition <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">factor</span>(<span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Control&#34;</span>, <span style="color:#e6db74">&#34;Control&#34;</span>, <span style="color:#e6db74">&#34;Control&#34;</span>, <span style="color:#e6db74">&#34;Control&#34;</span>, <span style="color:#e6db74">&#34;Control&#34;</span>, <span style="color:#e6db74">&#34;Control&#34;</span>, <span style="color:#e6db74">&#34;Control&#34;</span>, <span style="color:#e6db74">&#34;Control&#34;</span>, <span style="color:#e6db74">&#34;Control&#34;</span>, <span style="color:#e6db74">&#34;Control&#34;</span>, <span style="color:#e6db74">&#34;Disease&#34;</span>, <span style="color:#e6db74">&#34;Disease&#34;</span>, <span style="color:#e6db74">&#34;Disease&#34;</span>, <span style="color:#e6db74">&#34;Disease&#34;</span>, <span style="color:#e6db74">&#34;Disease&#34;</span>, <span style="color:#e6db74">&#34;Disease&#34;</span>, <span style="color:#e6db74">&#34;Disease&#34;</span>, <span style="color:#e6db74">&#34;Disease&#34;</span>, <span style="color:#e6db74">&#34;Disease&#34;</span>))
+</span></span><span style="display:flex;"><span>coldata <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data.frame</span>(row.names <span style="color:#f92672">=</span> <span style="color:#a6e22e">colnames</span>(cts), condition)
+</span></span><span style="display:flex;"><span>Groups <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">make.names</span>(<span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;Control&#34;</span>, <span style="color:#e6db74">&#34;Disease&#34;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>keep <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rowSums</span>(cts <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">10</span>) <span style="color:#f92672">&gt;=</span> <span style="color:#a6e22e">min</span>(<span style="color:#a6e22e">table</span>(coldata))
+</span></span><span style="display:flex;"><span>cts <span style="color:#f92672">&lt;-</span> cts[keep, ]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>dds <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">DESeqDataSetFromMatrix</span>(countData <span style="color:#f92672">=</span> <span style="color:#a6e22e">round</span>(cts),
+</span></span><span style="display:flex;"><span>                              colData <span style="color:#f92672">=</span> coldata,
+</span></span><span style="display:flex;"><span>                              design <span style="color:#f92672">=</span> <span style="color:#f92672">~</span>condition)
+</span></span><span style="display:flex;"><span>dds <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">DESeq</span>(dds)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Save all the results</span>
+</span></span><span style="display:flex;"><span>res <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">results</span>(dds, contrast <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;condition&#34;</span>, Groups[2], Groups[1]),
+</span></span><span style="display:flex;"><span>               alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.05</span>,
+</span></span><span style="display:flex;"><span>               pAdjustMethod <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;fdr&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>res <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">as.data.frame</span>(res)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">write.csv</span>(res, <span style="color:#e6db74">&#39;all_results.csv&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Filtered DEGs</span>
+</span></span><span style="display:flex;"><span>res <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">subset</span>(res, padj <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0.01</span> <span style="color:#f92672">&amp;</span> <span style="color:#a6e22e">abs</span>(log2FoldChange) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>res <span style="color:#f92672">&lt;-</span> res<span style="color:#a6e22e">[order</span>(res<span style="color:#f92672">$</span>log2FoldChange), ]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">write.csv</span>(res, <span style="color:#e6db74">&#39;deg_results.csv&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Summary of DEGs</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">summary</span>(res)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Top 10 genes: downregulated and upregulated</span>
+</span></span><span style="display:flex;"><span>up <span style="color:#f92672">&lt;-</span> res<span style="color:#a6e22e">[order</span>(res<span style="color:#f92672">$</span>log2FoldChange)[1<span style="color:#f92672">:</span><span style="color:#ae81ff">10</span>], ]
+</span></span><span style="display:flex;"><span>down <span style="color:#f92672">&lt;-</span> res<span style="color:#a6e22e">[order</span>(<span style="color:#f92672">-</span>res<span style="color:#f92672">$</span>log2FoldChange)[1<span style="color:#f92672">:</span><span style="color:#ae81ff">10</span>], ]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">write.csv</span>(up, <span style="color:#e6db74">&#39;DEG_top10_up.csv&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">write.csv</span>(down, <span style="color:#e6db74">&#39;DEG_top10_down.csv&#39;</span>)
+</span></span></code></pre></div><h2 id="ensembl-ids-to-gene-symbols">ENSEMBL IDs to Gene Symbols</h2>
+<p>Sometimes we have ENSEMBL IDs in the original counts matrix, but for plots and further analysis we need the official gene symbols. I use the <code>bioMart</code> package to convert:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>gene_id <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rownames</span>(res)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Choose the database</span>
+</span></span><span style="display:flex;"><span>ensemble <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">useEnsembl</span>(biomart<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;genes&#39;</span>)
+</span></span><span style="display:flex;"><span>datasets <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">listDatasets</span>(ensemble)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Select the species: Homo sapiens</span>
+</span></span><span style="display:flex;"><span>ensemble <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">useDataset</span>(dataset<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hsapiens_gene_ensembl&#34;</span>, mart<span style="color:#f92672">=</span>ensemble)
+</span></span><span style="display:flex;"><span>attributes <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">listAttributes</span>(ensemble)
+</span></span><span style="display:flex;"><span>ensemble <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">useEnsembl</span>(biomart <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;genes&#34;</span>, dataset<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hsapiens_gene_ensembl&#34;</span>)
+</span></span><span style="display:flex;"><span>results <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">getBM</span>(mart<span style="color:#f92672">=</span>ensemble, attributes <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hgnc_symbol&#34;</span>,
+</span></span><span style="display:flex;"><span>                 filters <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ensembl_gene_id&#34;</span>,
+</span></span><span style="display:flex;"><span>                 values <span style="color:#f92672">=</span> gene_id)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Get the corresponding gene symbols</span>
+</span></span><span style="display:flex;"><span>gene_data <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">getBM</span>(attributes <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;ensembl_gene_id&#34;</span>, <span style="color:#e6db74">&#34;hgnc_symbol&#34;</span>),
+</span></span><span style="display:flex;"><span>                   filters <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ensembl_gene_id&#34;</span>,
+</span></span><span style="display:flex;"><span>                   values <span style="color:#f92672">=</span> gene_id,
+</span></span><span style="display:flex;"><span>                   mart <span style="color:#f92672">=</span> ensemble)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create a dataframe with Ensembl IDs and gene symbols</span>
+</span></span><span style="display:flex;"><span>genes <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data.frame</span>(Ensembl_ID <span style="color:#f92672">=</span> gene_data<span style="color:#f92672">$</span>ensembl_gene_id,
+</span></span><span style="display:flex;"><span>                    Gene_Symbol <span style="color:#f92672">=</span> gene_data<span style="color:#f92672">$</span>hgnc_symbol)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Gene symbols that are not found in the ensembl dataframe</span>
+</span></span><span style="display:flex;"><span>not_found <span style="color:#f92672">&lt;-</span> gene_data[gene_data<span style="color:#f92672">$</span>hgnc_symbol <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;&#34;</span>,]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;biomart couldn&#39;t find&#34;</span>, <span style="color:#a6e22e">length</span>(<span style="color:#a6e22e">rownames</span>(not_found)), <span style="color:#e6db74">&#34;of the genes!&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Remove rows that have not been founded</span>
+</span></span><span style="display:flex;"><span>genes <span style="color:#f92672">&lt;-</span> genes[genes<span style="color:#f92672">$</span>Gene_Symbol <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;&#34;</span>,]
+</span></span><span style="display:flex;"><span>gene_symbols <span style="color:#f92672">&lt;-</span> genes<span style="color:#f92672">$</span>Gene_Symbol
+</span></span><span style="display:flex;"><span>gene_ensmbl <span style="color:#f92672">&lt;-</span> genes<span style="color:#f92672">$</span>Ensembl_ID
+</span></span><span style="display:flex;"><span>matching_genes <span style="color:#f92672">&lt;-</span> res<span style="color:#a6e22e">[rownames</span>(res) <span style="color:#f92672">%in%</span> gene_ensmbl, ]
+</span></span><span style="display:flex;"><span>matching_log2foldchanges <span style="color:#f92672">&lt;-</span> matching_genes<span style="color:#f92672">$</span>log2FoldChange
+</span></span><span style="display:flex;"><span>result_df <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data.frame</span>(GeneSymbol <span style="color:#f92672">=</span> gene_symbols, log2FoldChange <span style="color:#f92672">=</span> matching_log2foldchanges)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">write.csv</span>(result_df, <span style="color:#e6db74">&#39;genes_log2.csv&#39;</span>, row.names <span style="color:#f92672">=</span> <span style="color:#66d9ef">FALSE</span>)
+</span></span></code></pre></div><h2 id="plots">Plots</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">#&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;________PLOTS__________&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;#</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Important genes that we want to plot</span>
+</span></span><span style="display:flex;"><span>imp_genes <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;CDON&#34;</span>, <span style="color:#e6db74">&#34;OMG&#34;</span>, <span style="color:#e6db74">&#34;TSPAN15&#34;</span>, <span style="color:#e6db74">&#34;CHEK1&#34;</span>, <span style="color:#e6db74">&#34;ROBO2&#34;</span>, <span style="color:#e6db74">&#34;PGA5&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Select the important genes from the dataframe</span>
+</span></span><span style="display:flex;"><span>selected <span style="color:#f92672">&lt;-</span> genes <span style="color:#f92672">%&gt;%</span> <span style="color:#a6e22e">filter</span>(Gene_Symbol <span style="color:#f92672">%in%</span> imp_genes)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Slice the rows (ensembl ids) to give them to the degPlot function so it plots the important genes</span>
+</span></span><span style="display:flex;"><span>sel_rows <span style="color:#f92672">&lt;-</span> selected[[1]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">png</span>(<span style="color:#e6db74">&#34;./plots/table_log2fc_abundance_plot.png&#34;</span>, width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1500</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">1500</span>, res <span style="color:#f92672">=</span> <span style="color:#ae81ff">300</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">degPlot</span>(dds, genes <span style="color:#f92672">=</span> sel_rows, xs <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;condition&#34;</span>, group <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;condition&#34;</span>, color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Accent&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">dev.off</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">png</span>(<span style="color:#e6db74">&#34;./plots/deg_Plot_Wide.png&#34;</span>, width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1500</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">1500</span>, res <span style="color:#f92672">=</span> <span style="color:#ae81ff">300</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">degPlotWide</span>(dds, <span style="color:#a6e22e">rownames</span>(dds)[1<span style="color:#f92672">:</span><span style="color:#ae81ff">5</span>], group<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;condition&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">dev.off</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Individual Gene Count</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Loop, find expression, plot, save png to folder</span>
+</span></span><span style="display:flex;"><span>gene_ids_data <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read.csv</span>(<span style="color:#e6db74">&#34;gene_ids_plot.csv&#34;</span>)
+</span></span><span style="display:flex;"><span>gene_ids <span style="color:#f92672">&lt;-</span> gene_ids_data<span style="color:#f92672">$</span>gene_id
+</span></span><span style="display:flex;"><span>gene_symbols <span style="color:#f92672">&lt;-</span> gene_ids_data<span style="color:#f92672">$</span>gene_symbol  <span style="color:#75715e"># Assuming the column name is &#34;gene_symbol&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Loop through gene_ids and create plots</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">for </span>(i in <span style="color:#a6e22e">seq_along</span>(gene_ids)) {
+</span></span><span style="display:flex;"><span>        gene_id <span style="color:#f92672">&lt;-</span> gene_ids[i]
+</span></span><span style="display:flex;"><span>        gene_symbol <span style="color:#f92672">&lt;-</span> gene_symbols[i]
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Create a plot</span>
+</span></span><span style="display:flex;"><span>        png_file <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">file.path</span>(<span style="color:#e6db74">&#34;./plots/&#34;</span>, <span style="color:#a6e22e">paste0</span>(gene_symbol, <span style="color:#e6db74">&#34;_plot.png&#34;</span>))  <span style="color:#75715e"># Generate the full file path</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">png</span>(png_file, width <span style="color:#f92672">=</span> <span style="color:#ae81ff">800</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">600</span>)  <span style="color:#75715e"># Set width and height as needed</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">plotCounts</span>(dds <span style="color:#f92672">=</span> dds, gene <span style="color:#f92672">=</span> gene_id, main <span style="color:#f92672">=</span> gene_symbol)
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">dev.off</span>()  <span style="color:#75715e"># Close the PNG device</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Print a message to show progress</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">cat</span>(<span style="color:#e6db74">&#34;Plot saved for gene:&#34;</span>, gene_symbol, <span style="color:#e6db74">&#34;\n&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Dispersion</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">png</span>(<span style="color:#e6db74">&#34;./plots/dispersion_plot.png&#34;</span>, width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1500</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">1500</span>, res <span style="color:#f92672">=</span> <span style="color:#ae81ff">300</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plotDispEsts</span>(dds, main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Dispersion Estimates&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">dev.off</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># PCA</span>
+</span></span><span style="display:flex;"><span>vsd <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">vst</span>(dds, blind<span style="color:#f92672">=</span><span style="color:#66d9ef">FALSE</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">png</span>(<span style="color:#e6db74">&#34;./plots/PCA_plot.png&#34;</span>, width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1500</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">1500</span>, res <span style="color:#f92672">=</span> <span style="color:#ae81ff">300</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plotPCA</span>(vsd, intgroup <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;condition&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">dev.off</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># create histogram plot of p-values</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">png</span>(<span style="color:#e6db74">&#34;./plots/Histo_P-values_plot.png&#34;</span>, width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1500</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">1500</span>, res <span style="color:#f92672">=</span> <span style="color:#ae81ff">300</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hist</span>(res<span style="color:#f92672">$</span>padj, breaks<span style="color:#f92672">=</span><span style="color:#a6e22e">seq</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, length <span style="color:#f92672">=</span> <span style="color:#ae81ff">21</span>), col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;gray&#34;</span>, border <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;white&#34;</span>, 
+</span></span><span style="display:flex;"><span>     xlab <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>, ylab <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>, main <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Frequencies of padj-values&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">dev.off</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># volcano plot</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">png</span>(<span style="color:#e6db74">&#34;./plots/Volcano_plot.png&#34;</span>, width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1500</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">1500</span>, res <span style="color:#f92672">=</span> <span style="color:#ae81ff">300</span>)
+</span></span><span style="display:flex;"><span>old.pal <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">palette</span>(<span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;#00BFFF&#34;</span>, <span style="color:#e6db74">&#34;#FF3030&#34;</span>)) <span style="color:#75715e"># low-hi colors</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">par</span>(mar<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1</span>), cex.main<span style="color:#f92672">=</span><span style="color:#ae81ff">1.5</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(res<span style="color:#f92672">$</span>log2FoldChange, <span style="color:#f92672">-</span><span style="color:#a6e22e">log10</span>(res<span style="color:#f92672">$</span>padj), main<span style="color:#f92672">=</span><span style="color:#a6e22e">paste</span>(Groups[1], <span style="color:#e6db74">&#34;vs&#34;</span>, Groups[2]),
+</span></span><span style="display:flex;"><span>     xlab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;log2FC&#34;</span>, ylab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;-log10(Padj)&#34;</span>, pch<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>, cex<span style="color:#f92672">=</span><span style="color:#ae81ff">0.5</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">with</span>(<span style="color:#a6e22e">subset</span>(res, padj<span style="color:#f92672">&lt;</span><span style="color:#ae81ff">0.05</span> <span style="color:#f92672">&amp;</span> <span style="color:#a6e22e">abs</span>(log2FoldChange) <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span>),
+</span></span><span style="display:flex;"><span>     <span style="color:#a6e22e">points</span>(log2FoldChange, <span style="color:#f92672">-</span><span style="color:#a6e22e">log10</span>(padj), pch<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>, col<span style="color:#f92672">=</span>(<span style="color:#a6e22e">sign</span>(log2FoldChange) <span style="color:#f92672">+</span> <span style="color:#ae81ff">3</span>)<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, cex<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">legend</span>(<span style="color:#e6db74">&#34;bottomleft&#34;</span>, title<span style="color:#f92672">=</span><span style="color:#a6e22e">paste</span>(<span style="color:#e6db74">&#34;Padj&lt;&#34;</span>, <span style="color:#ae81ff">0.05</span>, sep<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>), legend<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;down&#34;</span>, <span style="color:#e6db74">&#34;up&#34;</span>), pch<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>,col<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">dev.off</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># MD plot</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">png</span>(<span style="color:#e6db74">&#34;./plots/MD_plot.png&#34;</span>, width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1500</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">1500</span>, res <span style="color:#f92672">=</span> <span style="color:#ae81ff">300</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">par</span>(mar<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1</span>), cex.main<span style="color:#f92672">=</span><span style="color:#ae81ff">1.5</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plot</span>(<span style="color:#a6e22e">log10</span>(res<span style="color:#f92672">$</span>baseMean), res<span style="color:#f92672">$</span>log2FoldChange, main<span style="color:#f92672">=</span><span style="color:#a6e22e">paste</span>(Groups[1], <span style="color:#e6db74">&#34;vs&#34;</span>, Groups[2]),
+</span></span><span style="display:flex;"><span>     xlab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;log10(mean of normalized counts)&#34;</span>, ylab<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;log2FoldChange&#34;</span>, pch<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>, cex<span style="color:#f92672">=</span><span style="color:#ae81ff">0.5</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">with</span>(<span style="color:#a6e22e">subset</span>(res, padj<span style="color:#f92672">&lt;</span><span style="color:#ae81ff">0.05</span> <span style="color:#f92672">&amp;</span> <span style="color:#a6e22e">abs</span>(log2FoldChange) <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span>),
+</span></span><span style="display:flex;"><span>     <span style="color:#a6e22e">points</span>(<span style="color:#a6e22e">log10</span>(baseMean), log2FoldChange, pch<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>, col<span style="color:#f92672">=</span>(<span style="color:#a6e22e">sign</span>(log2FoldChange) <span style="color:#f92672">+</span> <span style="color:#ae81ff">3</span>)<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>, cex<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>))
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">legend</span>(<span style="color:#e6db74">&#34;bottomleft&#34;</span>, title<span style="color:#f92672">=</span><span style="color:#a6e22e">paste</span>(<span style="color:#e6db74">&#34;Padj&lt;&#34;</span>, <span style="color:#ae81ff">0.05</span>, sep<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>), legend<span style="color:#f92672">=</span><span style="color:#a6e22e">c</span>(<span style="color:#e6db74">&#34;down&#34;</span>, <span style="color:#e6db74">&#34;up&#34;</span>), pch<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>,col<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">abline</span>(h<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">palette</span>(old.pal) <span style="color:#75715e"># restore palette</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">dev.off</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## 3. Heatmap: sample-to-sample distance</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### Generate distance matrix</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(pheatmap)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(RColorBrewer)
+</span></span><span style="display:flex;"><span>sampleDists <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">dist</span>(<span style="color:#a6e22e">t</span>(<span style="color:#a6e22e">assay</span>(vsd)))
+</span></span><span style="display:flex;"><span>sampleDistsMatrix <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">as.matrix</span>(sampleDists)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### Colorscheme</span>
+</span></span><span style="display:flex;"><span>colors <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">colorRampPalette</span>(<span style="color:#a6e22e">rev</span>(<span style="color:#a6e22e">brewer.pal</span>(<span style="color:#ae81ff">9</span>,<span style="color:#e6db74">&#34;Blues&#34;</span>)))(<span style="color:#ae81ff">255</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### Generate heatmap</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">png</span>(<span style="color:#e6db74">&#34;./plots/Heatmap_Smp2Smp_Distance_plot.png&#34;</span>, width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1500</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">1500</span>, res <span style="color:#f92672">=</span> <span style="color:#ae81ff">300</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">pheatmap</span>(sampleDistsMatrix, clustering_distance_rows<span style="color:#f92672">=</span>sampleDists,
+</span></span><span style="display:flex;"><span>         clustering_distance_cols<span style="color:#f92672">=</span>sampleDists, col<span style="color:#f92672">=</span>colors)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">dev.off</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## 4. Heatmap of log transformed normal counts: top 10 genes.</span>
+</span></span><span style="display:flex;"><span>top_genes <span style="color:#f92672">&lt;-</span> res<span style="color:#a6e22e">[order</span>(res<span style="color:#f92672">$</span>padj), ][1<span style="color:#f92672">:</span><span style="color:#ae81ff">10</span>,]
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### Get the gene names for the top 10</span>
+</span></span><span style="display:flex;"><span>top_genes <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">row.names</span>(top_genes)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### R log transformation</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">png</span>(<span style="color:#e6db74">&#34;./plots/Heatmap_R_Log_Transformation_plot.png&#34;</span>, width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1500</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">1500</span>, res <span style="color:#f92672">=</span> <span style="color:#ae81ff">300</span>)
+</span></span><span style="display:flex;"><span>rld <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">rlog</span>(dds, blind<span style="color:#f92672">=</span><span style="color:#66d9ef">FALSE</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">pheatmap</span>(<span style="color:#a6e22e">assay</span>(rld)[top_genes,], cluster_rows<span style="color:#f92672">=</span><span style="color:#66d9ef">FALSE</span>, show_rowname<span style="color:#f92672">=</span><span style="color:#66d9ef">TRUE</span>,cluster_cols<span style="color:#f92672">=</span><span style="color:#66d9ef">FALSE</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">dev.off</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## 5. Heatmap of Z scores</span>
+</span></span><span style="display:flex;"><span>normalized_counts <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">counts</span>(dds,normalized<span style="color:#f92672">=</span><span style="color:#66d9ef">TRUE</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">write.csv</span>(normalized_counts, <span style="color:#e6db74">&#39;normalized_counts.csv&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cal_z_score <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">function</span>(x) {(x<span style="color:#f92672">-</span><span style="color:#a6e22e">mean</span>(x)) <span style="color:#f92672">/</span> <span style="color:#a6e22e">sd</span>(x)}
+</span></span><span style="display:flex;"><span>zscore_all <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">t</span>(<span style="color:#a6e22e">apply</span>(normalized_counts, <span style="color:#ae81ff">1</span>, cal_z_score))
+</span></span><span style="display:flex;"><span>zscore_subset <span style="color:#f92672">&lt;-</span> zscore_all[top_genes,]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">png</span>(<span style="color:#e6db74">&#34;./plots/Heatmap_Zscores_plot.png&#34;</span>, width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1500</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">1500</span>, res <span style="color:#f92672">=</span> <span style="color:#ae81ff">300</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">pheatmap</span>(zscore_subset)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">dev.off</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## 6. MA Plot</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">png</span>(<span style="color:#e6db74">&#34;./plots/MA_plot.png&#34;</span>, width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1500</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">1500</span>, res <span style="color:#f92672">=</span> <span style="color:#ae81ff">300</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plotMA</span>(dds)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">dev.off</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### MA plot with removed noises</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(apeglm)
+</span></span><span style="display:flex;"><span>resLFC <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">lfcShrink</span>(dds, coef<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;condition_Disease_vs_Control&#34;</span>, type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;apeglm&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">png</span>(<span style="color:#e6db74">&#34;./plots/MA_plot_removed_noises.png&#34;</span>, width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1500</span>, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">1500</span>, res <span style="color:#f92672">=</span> <span style="color:#ae81ff">300</span>)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plotMA</span>(resLFC)
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">dev.off</span>()
+</span></span></code></pre></div>
           </article>
         </div>
       </div>
@@ -313,7 +499,12 @@ My DESeq2 Workflow | rahriver
                 Table Of Contents
               </h5>
               <div class="toc-content">
-                <nav id="TableOfContents"></nav>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#ensembl-ids-to-gene-symbols">ENSEMBL IDs to Gene Symbols</a></li>
+    <li><a href="#plots">Plots</a></li>
+  </ul>
+</nav>
               </div>
           </aside>
           
@@ -404,6 +595,65 @@ My DESeq2 Workflow | rahriver
   </div><footer>
     
  
+ 
+<div class="container py-3" id="recent-posts">
+    
+    
+    <div class="h3 text-center text-secondary py-3">
+        Recent Posts
+    </div>
+    <div class="row justify-content-center">
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/posts/abs_sle/">
+                        <img src="/images/posts/SLE-fig.png" class="card-img-top" alt="Abstract - Potential of Circulatory Cell-Free DNA">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/posts/abs_sle/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Abstract - Potential of Circulatory Cell-Free DNA">Abstract - Potential of …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>A Systematic Review on the Potential of Circulatory Cell-Free DNA in the Diagnosis of Systemic Lupus Erythematosus Patients Ramin Yousefpour Shahrivar1, Zahra Ahmadi Fakhr2, Zahra Jahanbakhsh3, Fatemeh Karami4 Abstract Background: Systemic lupus erythematosus (SLE) is one of the frequent autoimmune …</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Sep 10, 2023</span>
+                    <a href="/posts/abs_sle/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/posts/abs_aims/">
+                        <img src="/images/posts/AIMS-fig.jpg" class="card-img-top" alt="Abstract - Detection of Chromosomal Abnormalities">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/posts/abs_aims/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Abstract - Detection of Chromosomal Abnormalities">Abstract - Detection of …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>Detection of Major Structural Chromosomal Abnormalities in Human Karyotypes Using Convolutional Neural Networks Ramin Yousefpour Shahrivar1, Fatemeh Karami2 Abstract Background and aims: Chromosomal abnormalities are the prevalent cause of various types of genetic disorders, which can result in …</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Sep 10, 2023</span>
+                    <a href="/posts/abs_aims/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
 
 <div class="text-center pt-2">
     
@@ -477,14 +727,10 @@ My DESeq2 Workflow | rahriver
     </div>
 </div></footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
+    if (document.body.className.includes("light")) {
         document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
+        localStorage.setItem("pref-theme", 'dark');
     }
-
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {

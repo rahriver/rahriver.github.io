@@ -13,7 +13,8 @@
       <pubDate>Sun, 27 Aug 2023 19:07:04 +0330</pubDate>
       
       <guid>https://rahriver.github.io/posts/deseq2/</guid>
-      <description>Hi</description>
+      <description>Differential Gene Expression I use this code to run DESeq2 for evey differential gene expression analysis I have:
+library(DESeq2) library(biomaRt) library(DEGreport) library(ggplot2) library(dplyr) # Load data setwd(&amp;#39;/home/&amp;lt;directory&amp;gt;&amp;#39;) cts &amp;lt;- read.delim(&amp;#39;counts_data.csv&amp;#39;, sep=&amp;#39;,&amp;#39;, header = TRUE, row.names = 1) condition &amp;lt;- factor(c(&amp;#34;Control&amp;#34;, &amp;#34;Control&amp;#34;, &amp;#34;Control&amp;#34;, &amp;#34;Control&amp;#34;, &amp;#34;Control&amp;#34;, &amp;#34;Control&amp;#34;, &amp;#34;Control&amp;#34;, &amp;#34;Control&amp;#34;, &amp;#34;Control&amp;#34;, &amp;#34;Control&amp;#34;, &amp;#34;Disease&amp;#34;, &amp;#34;Disease&amp;#34;, &amp;#34;Disease&amp;#34;, &amp;#34;Disease&amp;#34;, &amp;#34;Disease&amp;#34;, &amp;#34;Disease&amp;#34;, &amp;#34;Disease&amp;#34;, &amp;#34;Disease&amp;#34;, &amp;#34;Disease&amp;#34;)) coldata &amp;lt;- data.frame(row.names = colnames(cts), condition) Groups &amp;lt;- make.names(c(&amp;#34;Control&amp;#34;, &amp;#34;Disease&amp;#34;)) keep &amp;lt;- rowSums(cts &amp;gt;= 10) &amp;gt;= min(table(coldata)) cts &amp;lt;- cts[keep, ] dds &amp;lt;- DESeqDataSetFromMatrix(countData = round(cts), colData = coldata, design = ~condition) dds &amp;lt;- DESeq(dds) # Save all the results res &amp;lt;- results(dds, contrast = c(&amp;#34;condition&amp;#34;, Groups[2], Groups[1]), alpha = 0.</description>
     </item>
     
   </channel>

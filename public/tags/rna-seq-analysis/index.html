@@ -133,7 +133,7 @@ RNA-seq Analysis | rahriver
 
 
 <header>
-    <nav class="pt-3 navbar navbar-expand-lg animate">
+    <nav class="fixed-top pt-3 navbar navbar-expand-lg animate">
         <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
             
             <a class="navbar-brand primary-font text-wrap" href="/">
@@ -173,7 +173,7 @@ RNA-seq Analysis | rahriver
                     
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="/#about" aria-label="about">
-                            🧬 About Me
+                            &lt;/&gt; About Me
                         </a>
                     </li>
                     
@@ -208,13 +208,6 @@ RNA-seq Analysis | rahriver
                     
 
                     
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/#contact"
-                            aria-label="contact">
-                            📞 Contact
-                        </a>
-                    </li>
-                    
 
                     
                     
@@ -224,16 +217,6 @@ RNA-seq Analysis | rahriver
                         <a class="nav-link" href="/posts" title="Blog posts">
                             
                             📰 Blog
-                        </a>
-                    </li>
-                    
-                    
-                    
-                    
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/gallery" title="Blog posts">
-                            
-                            Gallery
                         </a>
                     </li>
                     
@@ -289,7 +272,8 @@ RNA-seq Analysis | rahriver
                             <h5 class="card-title bg-transparent" title="My DESeq2 Workflow">My DESeq2 Workflow</h5>
                         </a>
                         <div class="card-text secondary-font">
-                            <p>Hi</p>
+                            <p>Differential Gene Expression I use this code to run DESeq2 for evey differential gene expression analysis I have:
+library(DESeq2) library(biomaRt) library(DEGreport) library(ggplot2) library(dplyr) # Load data setwd(&#39;/home/&lt;directory&gt;&#39;) cts &lt;- read.delim(&#39;counts_data.csv&#39;, …</p>
                         </div>
                     </div>
                     <div class="mt-auto post-footer bg-transparent py-3">
@@ -311,6 +295,65 @@ RNA-seq Analysis | rahriver
   </div><footer>
     
  
+ 
+<div class="container py-3" id="recent-posts">
+    
+    
+    <div class="h3 text-center text-secondary py-3">
+        Recent Posts
+    </div>
+    <div class="row justify-content-center">
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/posts/abs_sle/">
+                        <img src="/images/posts/SLE-fig.png" class="card-img-top" alt="Abstract - Potential of Circulatory Cell-Free DNA">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/posts/abs_sle/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Abstract - Potential of Circulatory Cell-Free DNA">Abstract - Potential of …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>A Systematic Review on the Potential of Circulatory Cell-Free DNA in the Diagnosis of Systemic Lupus Erythematosus Patients Ramin Yousefpour Shahrivar1, Zahra Ahmadi Fakhr2, Zahra Jahanbakhsh3, Fatemeh Karami4 Abstract Background: Systemic lupus erythematosus (SLE) is one of the frequent autoimmune …</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Sep 10, 2023</span>
+                    <a href="/posts/abs_sle/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/posts/abs_aims/">
+                        <img src="/images/posts/AIMS-fig.jpg" class="card-img-top" alt="Abstract - Detection of Chromosomal Abnormalities">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/posts/abs_aims/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Abstract - Detection of Chromosomal Abnormalities">Abstract - Detection of …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>Detection of Major Structural Chromosomal Abnormalities in Human Karyotypes Using Convolutional Neural Networks Ramin Yousefpour Shahrivar1, Fatemeh Karami2 Abstract Background and aims: Chromosomal abnormalities are the prevalent cause of various types of genetic disorders, which can result in …</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Sep 10, 2023</span>
+                    <a href="/posts/abs_aims/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
 
 <div class="text-center pt-2">
     
@@ -384,14 +427,10 @@ RNA-seq Analysis | rahriver
     </div>
 </div></footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
+    if (document.body.className.includes("light")) {
         document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
+        localStorage.setItem("pref-theme", 'dark');
     }
-
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
