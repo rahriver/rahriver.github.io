@@ -217,12 +217,12 @@ params:
         image: /images/publications/smartNP.png
         
       - title: "Enhancing Fetal Anomaly Detection in Ultrasound Images: A Review of Machine Learning-Based Approaches"
-        content: Submitted | MDPI Biomimetics (IF=4.5, Q2) | 2023
+        content: Accepted | MDPI Biomimetics (IF=4.5, Q2) | 2023
         url: /posts/abs_ml
         image: /images/publications/fetal.png
         
       - title: "CRISPR-mediated Genome Engineering: Breakthroughs and Challanges"
-        content: Submitted | Transgenic Research (IF=3.14, Q2) | 2023
+        content: Under Review | Transgenic Research (IF=3.14, Q2) | 2023
         # url: /posts/abs_crispr
         image: /images/publications/crispr.png
 
