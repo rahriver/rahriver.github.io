@@ -140,8 +140,6 @@ params:
           url: https://www.github.com/rahriver/
         - icon: fab fa-linkedin
           url: https://www.linkedin.com/in/ramin-yousefpour
-        - icon: fab fa-bookmark
-          url: https://scholar.google.com/citations?user=u3lo6HcAAAAJ&hl=en&oi=ao
         - icon: fab fa-google
           url: mailto:ramin.y.shahrivar@gmail.com
 
