@@ -162,7 +162,7 @@ params:
         - "Linux"
         - "Git"
         - "LaTeX"
-        - "Vim"
+        - "NeoVim"
 
 # Experiences
   experience:
