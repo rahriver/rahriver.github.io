@@ -55,7 +55,7 @@ Menus:
 params:
   title: "Portfolio"
   description: rahriver
-  # staticPath: ""  # The path to serve the static files from
+  # staticPath: ""  # The path to serve the static files
   favicon: "/dna.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
