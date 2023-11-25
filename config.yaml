@@ -76,7 +76,7 @@ params:
 
   theme:
     # disableThemeToggle: false
-    defaultTheme: "dark" # dark
+    defaultTheme: "light" # dark, light
 
   font:
     fontSize: 1rem # default: 1rem
@@ -122,7 +122,7 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Ramin."
-    subtitle: "A Bioinformatics Researcher"
+    subtitle: "Computational Biology, Bioinformatics, Genomics"
     content: "I'm a passionate FOSS (Free and Open Source Software) enthusiast, and I love using and developing open-source tools for analyzing biological data."
     image: /images/head.jpg
     bottomImage:
@@ -147,7 +147,7 @@ params:
   about:
     enable: true
     title: "</> About Me"
-    image: "/images/about.jpg"
+    image: "/images/me2.jpg"
     # content: |-
       # Bioinformatics researcher.
     skills:
@@ -167,12 +167,30 @@ params:
 # Experiences
   experience:
     enable: true
-    title: "💼 Work Experiences"
+    title: "🔬 Research Experiences"
     items:
+      - job: "Research Assistant"
+        company: "Shiraz University of Medical Sciences"
+        # companyUrl: "https://example.com"
+        date: "2023 - Present"
+        featuredLink:
+          enable: true
+          name: "Webpage"
+          url: "https://gsia.sums.ac.ir/"
+        content: "Computational research on developing wound dressing for Epidermolysis Bullosa patients. Techniques used: Spatial transcriptomics, RNA-seq data analysis. Supervisor: Dr. Mahsa Sani"
+      - job: "Research Assistant"
+        company: "Islamic Azad University Science and Research Branch"
+        # companyUrl: "https://example.com"
+        date: "2022 - Present"
+        featuredLink:
+          enable: true
+          name: "Webpage"
+          url: "https://srb.iau.ir/en"
+        content: "Conducting computational research on differentially expressed genes in human disorders using various programming and bioinformatics tools. Developing machine learning models for medical image analysis (MRI, Ultrasonography). Writing literature review papers on research topics. Supervisor: Dr. Fatemeh Karami"
       - job: "Scientific Writer"
         company: "Rouyesh Magazine"
         # companyUrl: "https://example.com"
-        date: "2022 - present"
+        date: "2022 - Present"
         featuredLink:
           enable: true
           name: "Recent Volume"
@@ -225,7 +243,7 @@ params:
         image: /images/publications/crispr.png
 
       - title: "Comprehensive Analysis of Tay-Sachs and Niemann-Pick Disease: Shared and Distinct Genes and Pathways"
-        content: To be submitted | MDPI Information (IF=3.1, Q2) | 2023
+        content: To be submitted | PLoS Computational Biology (IF=4.7, Q1) | 2023
         # url: 
         image: /images/publications/tay.jpg
         
@@ -251,7 +269,7 @@ params:
           name: GitHub
           link: https://www.github.com/rahriver/Arch-Linux
         badges:
-          - "58 ⭐"
+          - "60 ⭐"
           - "Linux"
           - "Shell"
           - "Python"
