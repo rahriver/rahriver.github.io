@@ -131,7 +131,7 @@ params:
     button:
       enable: true
       name: "My CV"
-      url: "https://drive.google.com/file/d/1lNPsyrigvvmAwvJwp9cMN0Yq-tNlGQJW/view?usp=sharing"
+      url: "https://drive.google.com/file/d/1KpL8S4fBU96MLijv-bWwRGMI5EM-z8I6/view?usp=sharing"
       download: true
       newPage: true
     socialLinks:
@@ -213,7 +213,7 @@ params:
         featuredLink:
           enable: true
           name: "Transcript of Grades"
-          url: "https://drive.google.com/file/d/1sBwCxYOzPZutZtleYynClRg6AKEtw9ct/view?usp=sharing"
+          url: "https://drive.google.com/file/d/1ca59jjDVkJ8sIWMz0kQPQI0CN2hb4cPm/view?usp=sharing"
           download: true
           newPage: true
 
