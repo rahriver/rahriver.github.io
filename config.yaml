@@ -214,12 +214,14 @@ params:
           enable: true
           name: "Transcript of Grades"
           url: "https://drive.google.com/file/d/1sBwCxYOzPZutZtleYynClRg6AKEtw9ct/view?usp=sharing"
+          download: true
+          newPage: true
 
       - title: "💬 TOEFL iBT Test"
         school:
           name: "Score: 102/120"
           # url: "https://example.org"
-        date: "July 2023"
+        date: "9/July/2023"
         # GPA: "102/120"
 
   # Publications
@@ -269,7 +271,7 @@ params:
           name: GitHub
           link: https://www.github.com/rahriver/Arch-Linux
         badges:
-          - "60 ⭐"
+          - "61 ⭐"
           - "Linux"
           - "Shell"
           - "Python"
@@ -332,7 +334,7 @@ params:
           name: GitHub
           link: https://www.github.com/rahriver/Ankinator
         badges:
-          - "6 ⭐"
+          - "8 ⭐"
           - "Python"
           - "Anki"
 
