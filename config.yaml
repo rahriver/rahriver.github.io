@@ -187,7 +187,7 @@ params:
           name: "Webpage"
           url: "https://srb.iau.ir/en"
         content: "Conducting computational research on differentially expressed genes in human disorders using various programming and bioinformatics tools. Developing machine learning models for medical image analysis (MRI, Ultrasonography). Writing literature review papers on research topics. Supervisor: Dr. Fatemeh Karami"
-      - job: "Scientific Writer"
+      - job: "Science Writer"
         company: "Rouyesh Magazine"
         # companyUrl: "https://example.com"
         date: "2022 - Present"
@@ -244,7 +244,7 @@ params:
         # url: /posts/abs_crispr
         image: /images/publications/crispr.png
 
-      - title: "Comprehensive Analysis of Tay-Sachs and Niemann-Pick Disease: Shared and Distinct Genes and Pathways"
+      - title: "Differential Gene Expression Patterns in Niemann-Pick Type C and Tay-Sachs Diseases: Implications for Neurodegenerative Mechanisms"
         content: To be submitted | PLoS Computational Biology (IF=4.7, Q1) | 2023
         # url: 
         image: /images/publications/tay.jpg
@@ -316,7 +316,7 @@ params:
           - "PyQT5"
 
       - title: Academ.AI
-        content: This Python script is designed to scrape Google Scholar, allowing users to extract research titles and abstracts from any scholar's profile. It also has the capability to generate graphs that visualize the similarities between these research titles
+        content: This Python script is designed to scrape Google Scholar, allowing users to extract research titles and abstracts from any scholar's profile. It also has the capability to generate graphs that visualize the similarities between the research titles.
         image: /images/projects/academai.png
         featured:
           name: GitHub
