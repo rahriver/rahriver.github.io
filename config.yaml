@@ -271,7 +271,7 @@ params:
           name: GitHub
           link: https://www.github.com/rahriver/Arch-Linux
         badges:
-          - "61 ⭐"
+          - "63 ⭐"
           - "Linux"
           - "Shell"
           - "Python"
@@ -286,7 +286,7 @@ params:
           name: GitHub
           link: https://www.github.com/rahriver/rofi-noter
         badges:
-          - "24 ⭐"
+          - "25 ⭐"
           - "Shell"
           - "Linux"
         # links:
