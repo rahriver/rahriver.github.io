@@ -76,7 +76,7 @@ params:
 
   theme:
     # disableThemeToggle: false
-    defaultTheme: "light" # dark, light
+    defaultTheme: "dark" # dark, light
 
   font:
     fontSize: 1rem # default: 1rem
@@ -235,14 +235,14 @@ params:
         image: /images/publications/smartNP.png
         
       - title: "Enhancing Fetal Anomaly Detection in Ultrasonography Images: A Review of Machine Learning-Based Approaches"
-        content: Published | MDPI Biomimetics (IF=4.5, Q2) | 2023
+        content: Published | MDPI Biomimetics (IF=4.5, Q1) | 2023
         url: https://www.mdpi.com/2313-7673/8/7/519/htm
         image: /images/publications/fetal.png
         
-      - title: "CRISPR-mediated Genome Engineering: Breakthroughs and Challanges"
-        content: Under Review | Transgenic Research (IF=3.14, Q2) | 2023
-        # url: /posts/abs_crispr
-        image: /images/publications/crispr.png
+      - title: "Astrovirus: A Challenge for Humans, Animals, and the Environment"
+        content: Published | Journal of Infectious Diseases & Therapy (IF=2.47) | 2023
+        url: https://www.omicsonline.org/open-access/astrovirus-a-challenge-for-humans-animals-and-the-environment.pdf
+        image: /images/publications/AstV.png
 
       - title: "Differential Gene Expression Patterns in Niemann-Pick Type C and Tay-Sachs Diseases: Implications for Neurodegenerative Mechanisms"
         content: To be submitted | PLoS Computational Biology (IF=4.7, Q1) | 2023
