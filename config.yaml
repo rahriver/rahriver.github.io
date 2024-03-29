@@ -160,7 +160,6 @@ params:
         - "Linux"
         - "Git"
         - "LaTeX"
-        - "NeoVim"
 
 # Experiences
   experience:
