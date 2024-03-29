@@ -130,8 +130,8 @@ params:
     # roundImage: true # Make hero image circular | default false
     button:
       enable: false
-      name: "Curriculum Vitae"
-      url: ""
+        #name: "Curriculum Vitae"
+        #url: ""
       download: true
       newPage: true
     socialLinks:
