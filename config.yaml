@@ -129,9 +129,9 @@ params:
       enable: true
     # roundImage: true # Make hero image circular | default false
     button:
-      enable: true
+      enable: false
       name: "Curriculum Vitae"
-      url: "https://drive.google.com/file/d/1KpL8S4fBU96MLijv-bWwRGMI5EM-z8I6/view?usp=sharing"
+      url: ""
       download: true
       newPage: true
     socialLinks:
@@ -211,9 +211,9 @@ params:
         GPA: "3.9/4.0"
  #        content: |-
         featuredLink:
-          enable: true
-          name: "Transcript of Grades"
-          url: "https://drive.google.com/file/d/1ca59jjDVkJ8sIWMz0kQPQI0CN2hb4cPm/view?usp=sharing"
+          enable: false
+            # name: "Transcript of Grades"
+            # url: ""
           download: true
           newPage: true
 
