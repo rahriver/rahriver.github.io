@@ -164,6 +164,8 @@ params:
 # Experiences
   experience:
     enable: true
+    title: "🔬 Research Experiences"
+    items:
       - job: "Research Assistant"
         company: "Islamic Azad University Science and Research Branch"
         # companyUrl: "https://example.com"
