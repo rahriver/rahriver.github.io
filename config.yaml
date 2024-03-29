@@ -152,12 +152,10 @@ params:
       # Bioinformatics researcher.
     skills:
       enable: true
-      title: "Here are a few technologies that I work with:"
+      title: "Here are a few of my skills:"
       items:
         - "Python (scikit-learn, PyTorch, BioPython, PyQt5)"
         - "R (DESeq2, GOEnrich, WGCNA, ggplot2)"
-        - "Machine Learning"
-        - "Deep Learning (CNN)"
         - "Shell"
         - "Linux"
         - "Git"
@@ -167,17 +165,6 @@ params:
 # Experiences
   experience:
     enable: true
-    title: "🔬 Research Experiences"
-    items:
-      - job: "Research Assistant"
-        company: "Shiraz University of Medical Sciences"
-        # companyUrl: "https://example.com"
-        date: "2023 - Present"
-        featuredLink:
-          enable: true
-          name: "Webpage"
-          url: "https://gsia.sums.ac.ir/"
-        content: "Computational research on developing wound dressing for Epidermolysis Bullosa patients. Techniques used: Spatial transcriptomics, RNA-seq data analysis. Supervisor: Dr. Mahsa Sani"
       - job: "Research Assistant"
         company: "Islamic Azad University Science and Research Branch"
         # companyUrl: "https://example.com"
@@ -271,7 +258,7 @@ params:
           name: GitHub
           link: https://www.github.com/rahriver/Arch-Linux
         badges:
-          - "64 ⭐"
+          - "67 ⭐"
           - "Linux"
           - "Shell"
           - "Python"
@@ -286,7 +273,7 @@ params:
           name: GitHub
           link: https://www.github.com/rahriver/rofi-noter
         badges:
-          - "24 ⭐"
+          - "27 ⭐"
           - "Shell"
           - "Linux"
         # links:
