@@ -122,8 +122,8 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Ramin."
-    subtitle: "Computational Biology, Bioinformatics, Genomics"
-    content: "I'm a passionate FOSS (Free and Open Source Software) enthusiast, and I love using and developing open-source tools for analyzing biological data."
+    subtitle: "Bioinformatics"
+    content: "I'm a Bioinformatics PhD student at Gerogia Institute of Technology, and I love using and developing open-source tools for analyzing biological data."
     image: /images/head.jpg
     bottomImage:
       enable: true
@@ -166,10 +166,19 @@ params:
     enable: true
     title: "🔬 Research Experiences"
     items:
+      - job: "Teaching Assistant"
+        company: "Georgia Institute of Technology"
+        # companyUrl: "https://bioinformatics.gatech.edu/welcome"
+        date: "Aug 2024 - Aug 2025"
+        featuredLink:
+          enable: true
+          name: "Webpage"
+          url: "https://bioinformatics.gatech.edu/welcome"
+        content: "Conducting computational research on differentially expressed genes in human disorders using various programming and bioinformatics tools. Developing machine learning models for medical image analysis (MRI, Ultrasonography). Writing literature review papers on research topics. Supervisor: Dr. Fatemeh Karami"
       - job: "Research Assistant"
         company: "Islamic Azad University Science and Research Branch"
         # companyUrl: "https://example.com"
-        date: "2022 - Present"
+        date: "2022 - 2023"
         featuredLink:
           enable: true
           name: "Webpage"
