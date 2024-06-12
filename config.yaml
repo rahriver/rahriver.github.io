@@ -149,10 +149,10 @@ params:
     title: "</> About Me"
     image: /images/ramin.jpg
     content: |-
-      I'm a Bioinformatics researcher, and here are a few technologies that I have worked with
+      I'm a Bioinformatics researcher.
     skills:
       enable: true
-      title: ":"
+      title: "Here are a few of my skills:"
       items:
         - "Python (scikit-learn, PyTorch, BioPython, PyQt5)"
         - "R (DESeq2, GOEnrich, WGCNA, ggplot2)"
