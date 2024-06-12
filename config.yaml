@@ -122,7 +122,7 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Ramin."
-    subtitle: "Bioinformatics"
+    subtitle: "A PhD Student in Bioinformatics."
     content: "I'm a Bioinformatics PhD student at Georgia Institute of Technology, and I love using and developing open-source tools for analyzing biological data."
     image: /images/head.jpg
     bottomImage:
@@ -175,15 +175,6 @@ params:
           name: "Webpage"
           url: "https://bioinformatics.gatech.edu/welcome"
         content: "Grading assessments such as papers and reports, tests, quizzes, homework. Assisting in the preparation of learning materials Providing students with guidance in interpretation of cours subject matter. Holding office hours with students. Advisor: Professor Storici"
-      - job: "Research Assistant"
-        company: "Islamic Azad University Science and Research Branch"
-        # companyUrl: "https://example.com"
-        date: "2022 - 2023"
-        featuredLink:
-          enable: true
-          name: "Webpage"
-          url: "https://srb.iau.ir/en"
-        content: "Conducting computational research on differentially expressed genes in human disorders using various programming and bioinformatics tools. Developing machine learning models for medical image analysis (MRI, Ultrasonography). Writing literature review papers on research topics. Supervisor: Dr. Fatemeh Karami"
       - job: "Science Writer"
         company: "Rouyesh Magazine"
         # companyUrl: "https://example.com"
