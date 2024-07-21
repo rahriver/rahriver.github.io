@@ -122,7 +122,7 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Ramin."
-    subtitle: "A PhD Student in Bioinformatics."
+    subtitle: "PhD Student in Bioinformatics."
     content: "I'm a Bioinformatics PhD student at Georgia Institute of Technology, and I love using and developing open-source tools for analyzing biological data."
     image: /images/head.jpg
     bottomImage:
