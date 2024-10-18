@@ -77,7 +77,7 @@ params:
   theme:
     # disableThemeToggle: false
     defaultTheme: "light" # dark, light
-
+i
   font:
     fontSize: 1rem # default: 1rem
     fontWeight: 400 # default: 400
@@ -155,16 +155,16 @@ params:
       title: "Here are a few of my skills:"
       items:
         - "Python (scikit-learn, PyTorch, BioPython, PyQt5)"
-        - "R (DESeq2, GOEnrich, WGCNA, ggplot2)"
+        - "R (DESeq2, Shiny, WGCNA, ggplot2)"
         - "Shell"
         - "Linux"
-        - "Git"
+        - "PyMol"
         - "LaTeX"
 
 # Experiences
   experience:
     enable: true
-    title: "🔬 Research Experiences"
+    title: "🔬 Experiences"
     items:
       - job: "Teaching Assistant"
         company: "Georgia Institute of Technology"
@@ -174,7 +174,7 @@ params:
           enable: true
           name: "Webpage"
           url: "https://bioinformatics.gatech.edu/welcome"
-        content: "Grading assessments such as papers and reports, tests, quizzes, homework. Assisting in the preparation of learning materials Providing students with guidance in interpretation of cours subject matter. Holding office hours with students. Advisor: Professor Storici"
+        content: "Grading assessments such as papers and reports, tests, quizzes, homework. Assisting in the preparation of learning materials. Providing students with guidance in interpretation of cours subject matter. Instructor: Dr. Rebeca James
       - job: "Science Writer"
         company: "Rouyesh Magazine"
         # companyUrl: "https://example.com"
@@ -244,7 +244,7 @@ params:
         image: /images/publications/AstV.png
 
       - title: "Differential Gene Expression Patterns in Niemann-Pick Type C and Tay-Sachs Diseases: Implications for Neurodegenerative Mechanisms"
-        content: To be submitted | PLoS One Genetics (IF=4.5, Q1) | 2024
+        content: Submitted | PLOS ONE (IF=2.9, Q1) | 2024
         image: /images/publications/tay.jpg
         
       - title: "Detection of Major Structural Chromosomal Abnormalities in Human Karyotypes using Convolutional Neural Networks"
@@ -269,7 +269,7 @@ params:
           name: GitHub
           link: https://www.github.com/rahriver/Arch-Linux
         badges:
-          - "74 ⭐"
+          - "77 ⭐"
           - "Linux"
           - "Shell"
           - "Python"
@@ -284,7 +284,7 @@ params:
           name: GitHub
           link: https://www.github.com/rahriver/rofi-noter
         badges:
-          - "27 ⭐"
+          - "29 ⭐"
           - "Shell"
           - "Linux"
         # links:
