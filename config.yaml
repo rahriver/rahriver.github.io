@@ -77,7 +77,7 @@ params:
   theme:
     # disableThemeToggle: false
     defaultTheme: "light" # dark, light
-i
+
   font:
     fontSize: 1rem # default: 1rem
     fontWeight: 400 # default: 400
@@ -148,7 +148,7 @@ i
     enable: true
     title: "</> About Me"
     image: /images/ramin.jpg
-    content: |-
+    content:
       I'm a Bioinformatics researcher.
     skills:
       enable: true
