@@ -166,8 +166,8 @@ params:
     enable: true
     title: "🔬 Experiences"
     items:
-      - job: "Research Assistant"
-        company: "Georgia Institute of Technology"
+      - job: "Georgia Institute of Technology"
+        company: "Research Assistant (GTech)"
         companyUrl: "https://bioinformatics.gatech.edu/welcome"
         date: "Aug 2024 - Present"
         featuredLink:
@@ -175,8 +175,8 @@ params:
           name: "Storici Lab"
           url: "https://storicilab.gatech.edu/people/graduate-students/"
         content: "Advisor: Dr. Francesca Storici. Conducting research on the role of ribonucleotide monophsopates (rNMPs) in genome stability. Developing computational tools for analyzing data generated from Ribose-Seq method."
-      - job: "Teaching Assistant"
-        company: "Georgia Institute of Technology"
+      - job: "Georgia Institute of Technology"
+        company: "Teaching Assistant"
         companyUrl: "https://www.gatech.edu/"
         date: "Aug 2024 - Present"
         featuredLink:
@@ -184,7 +184,7 @@ params:
           name: "Webpage"
           url: "https://bioinformatics.gatech.edu/welcome"
         content: "Grading assessments such as papers and reports, tests, quizzes, homework. Assisting in the preparation of learning materials. Providing students with guidance in interpretation of cours subject matter. Instructor: Dr. Rebeca James."
-      - job: "Research Assistant"
+      - job: "Research Assistant (SRBIAU)"
         company: "SRBIAU"
         companyUrl: "https://srb.iau.ir/en"
         date: "Sep 2022 - Mar 2024"
