@@ -184,8 +184,8 @@ params:
           name: "Webpage"
           url: "https://bioinformatics.gatech.edu/welcome"
         content: "Grading assessments such as papers and reports, tests, quizzes, homework. Assisting in the preparation of learning materials. Providing students with guidance in interpretation of cours subject matter. Instructor: Dr. Rebeca James."
-      - job: "Research Assistant (SRBIAU)"
-        company: "SRBIAU"
+      - job: "Science and Research Branch, Islamic Azad University"
+        company: "Rssearch Assistant (SRBIAU)"
         companyUrl: "https://srb.iau.ir/en"
         date: "Sep 2022 - Mar 2024"
         featuredLink:
