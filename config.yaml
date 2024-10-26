@@ -147,7 +147,7 @@ params:
   about:
     enable: true
     title: "</> About Me"
-    image: /images/ramin.jpg
+    image: /images/me.jpeg
     content:
       I'm a Bioinformatics researcher.
     skills:
