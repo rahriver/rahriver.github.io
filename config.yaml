@@ -76,7 +76,7 @@ params:
 
   theme:
     # disableThemeToggle: false
-    defaultTheme: "light" # dark, light
+    defaultTheme: "dark" # dark, light
 
   font:
     fontSize: 1rem # default: 1rem
@@ -166,19 +166,37 @@ params:
     enable: true
     title: "🔬 Experiences"
     items:
+      - job: "Research Assistant"
+        company: "Georgia Institute of Technology"
+        companyUrl: "https://bioinformatics.gatech.edu/welcome"
+        date: "Aug 2024 - Present"
+        featuredLink:
+          enable: false
+          name: "Storici Lab"
+          url: "https://storicilab.gatech.edu/people/graduate-students/"
+        content: "Advisor: Dr. Francesca Storici. Conducting research on the role of ribonucleotide monophsopates (rNMPs) in genome stability. Developing computational tools for analyzing data generated from Ribose-Seq method."
       - job: "Teaching Assistant"
         company: "Georgia Institute of Technology"
-        # companyUrl: "https://bioinformatics.gatech.edu/welcome"
-        date: "Aug 2024 - Aug 2025"
+        companyUrl: "https://www.gatech.edu/"
+        date: "Aug 2024 - Present"
+        featuredLink:
+          enable: false
+          name: "Webpage"
+          url: "https://bioinformatics.gatech.edu/welcome"
+        content: "Grading assessments such as papers and reports, tests, quizzes, homework. Assisting in the preparation of learning materials. Providing students with guidance in interpretation of cours subject matter. Instructor: Dr. Rebeca James."
+      - job: "Research Assistant"
+        company: "SRBIAU"
+        companyUrl: "https://srb.iau.ir/en"
+        date: "Sep 2022 - Mar 2024"
         featuredLink:
           enable: true
           name: "Webpage"
           url: "https://bioinformatics.gatech.edu/welcome"
-        content: "Grading assessments such as papers and reports, tests, quizzes, homework. Assisting in the preparation of learning materials. Providing students with guidance in interpretation of cours subject matter. Instructor: Dr. Rebeca James."
+        content: "Conducting computational research on differentially expressed genes in human disorders using various programming and bioinformatics tools. Training machine learning models for medical image analysis (MRI, Ultrasonography). Writing literature review papers on various research topics. Advisor: Dr. Fatemeh Karami."
       - job: "Science Writer"
         company: "Rouyesh Magazine"
         # companyUrl: "https://example.com"
-        date: "2022 - Present"
+        date: "2022 - 2024"
         featuredLink:
           enable: true
           name: "Recent Volume"
@@ -218,7 +236,7 @@ params:
           download: true
           newPage: true
 
-      - title: "💬 TOEFL iBT ® Test"
+      - title: "TOEFL iBT ® Test"
         school:
           name: "Score: 102/120"
         date: "9/July/2023"
