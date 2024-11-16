@@ -2,44 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://rahriver.github.io/posts/abs_sle/</loc>
+    <loc>http://localhost:1313/posts/abs_sle/</loc>
     <lastmod>2023-09-10T13:42:20+03:30</lastmod>
   </url><url>
-    <loc>https://rahriver.github.io/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2023-09-10T13:42:20+03:30</lastmod>
   </url><url>
-    <loc>https://rahriver.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2023-09-10T13:42:20+03:30</lastmod>
   </url><url>
-    <loc>https://rahriver.github.io/posts/abs_aims/</loc>
+    <loc>http://localhost:1313/posts/abs_aims/</loc>
     <lastmod>2023-09-10T13:31:54+03:30</lastmod>
   </url><url>
-    <loc>https://rahriver.github.io/posts/abs_smart/</loc>
+    <loc>http://localhost:1313/posts/abs_smart/</loc>
     <lastmod>2023-09-10T13:28:58+03:30</lastmod>
   </url><url>
-    <loc>https://rahriver.github.io/posts/abs_ml/</loc>
+    <loc>http://localhost:1313/posts/abs_ml/</loc>
     <lastmod>2023-09-10T13:19:38+03:30</lastmod>
   </url><url>
-    <loc>https://rahriver.github.io/posts/primer_design/</loc>
+    <loc>http://localhost:1313/posts/primer_design/</loc>
     <lastmod>2023-08-29T02:17:43+03:30</lastmod>
   </url><url>
-    <loc>https://rahriver.github.io/tags/deseq2/</loc>
+    <loc>http://localhost:1313/tags/deseq2/</loc>
     <lastmod>2023-08-27T19:07:04+03:30</lastmod>
   </url><url>
-    <loc>https://rahriver.github.io/posts/deseq2/</loc>
+    <loc>http://localhost:1313/posts/deseq2/</loc>
     <lastmod>2023-08-27T19:07:04+03:30</lastmod>
   </url><url>
-    <loc>https://rahriver.github.io/tags/r-lang/</loc>
+    <loc>http://localhost:1313/tags/r-lang/</loc>
     <lastmod>2023-08-27T19:07:04+03:30</lastmod>
   </url><url>
-    <loc>https://rahriver.github.io/tags/rna-seq-analysis/</loc>
+    <loc>http://localhost:1313/tags/rna-seq-analysis/</loc>
     <lastmod>2023-08-27T19:07:04+03:30</lastmod>
   </url><url>
-    <loc>https://rahriver.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2023-08-27T19:07:04+03:30</lastmod>
   </url><url>
-    <loc>https://rahriver.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://rahriver.github.io/gallery/</loc>
+    <loc>http://localhost:1313/gallery/</loc>
   </url>
 </urlset>

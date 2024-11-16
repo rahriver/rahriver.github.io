@@ -2,10 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Primer Design on rahriver</title>
-    <link>https://rahriver.github.io/posts/primer_design/</link>
+    <link>http://localhost:1313/posts/primer_design/</link>
     <description>Recent content in Primer Design on rahriver</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Aug 2023 02:17:43 +0330</lastBuildDate><atom:link href="https://rahriver.github.io/posts/primer_design/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/primer_design/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

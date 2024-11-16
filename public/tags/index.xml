@@ -2,37 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on rahriver</title>
-    <link>https://rahriver.github.io/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on rahriver</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Aug 2023 19:07:04 +0330</lastBuildDate><atom:link href="https://rahriver.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Aug 2023 19:07:04 +0330</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DESeq2</title>
-      <link>https://rahriver.github.io/tags/deseq2/</link>
+      <link>http://localhost:1313/tags/deseq2/</link>
       <pubDate>Sun, 27 Aug 2023 19:07:04 +0330</pubDate>
-      
-      <guid>https://rahriver.github.io/tags/deseq2/</guid>
+      <guid>http://localhost:1313/tags/deseq2/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>R Lang</title>
-      <link>https://rahriver.github.io/tags/r-lang/</link>
+      <link>http://localhost:1313/tags/r-lang/</link>
       <pubDate>Sun, 27 Aug 2023 19:07:04 +0330</pubDate>
-      
-      <guid>https://rahriver.github.io/tags/r-lang/</guid>
+      <guid>http://localhost:1313/tags/r-lang/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>RNA-seq Analysis</title>
-      <link>https://rahriver.github.io/tags/rna-seq-analysis/</link>
+      <title>RNA-Seq Analysis</title>
+      <link>http://localhost:1313/tags/rna-seq-analysis/</link>
       <pubDate>Sun, 27 Aug 2023 19:07:04 +0330</pubDate>
-      
-      <guid>https://rahriver.github.io/tags/rna-seq-analysis/</guid>
+      <guid>http://localhost:1313/tags/rna-seq-analysis/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>
