@@ -154,14 +154,11 @@ params:
       enable: true
       title: "Here are a few of my skills:"
       items:
-        - "Python (scikit-learn, PyTorch, BioPython, PyQt5)"
+        - "Python (scikit-learn, PyTorch, NumPy, PyQt5)"
         - "R (DESeq2, Shiny, Seurat, ggplot2)"
         - "Shell"
         - "LaTeX"
         - "Linux"
-        - "Single-Cell Analysis"
-        - "ATAC-Seq Analysis"
-        - "RNA-Seq Analysis"
 
 # Experiences
   experience:
@@ -265,7 +262,6 @@ params:
 
       - title: "Differential Gene Expression Patterns in Niemann-Pick Type C and Tay-Sachs Diseases: Implications for Neurodegenerative Mechanisms"
         content: Published | PLOS ONE (IF=2.9, Q1) | 2025
-        url: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0319401
         image: /images/publications/tay.jpg
         
       - title: "Detection of Major Structural Chromosomal Abnormalities in Human Karyotypes using Convolutional Neural Networks"
