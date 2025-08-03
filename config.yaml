@@ -243,34 +243,25 @@ params:
           download: true
           newPage: true
 
-      - title: "TOEFL iBT ® Test"
-        school:
-          name: "Score: 102/120"
-        date: "9/July/2023"
-
   # Publications
   achievements:
     enable: true
     title: "📄 Publications"
     items:
-      - title: "Smart Lipid-Based Nanoparticles in Lung Cancer Treatment: Current Status and Future Directions"
-        content: Published | Wiley's Advanced Therapeutics (IF=4.74, Q1) | 2023
-        url: https://onlinelibrary.wiley.com/doi/abs/10.1002/adtp.202300275
-        image: /images/publications/smartNP.png
+      - title: "Differential Gene Expression Patterns in Niemann-Pick Type C and Tay-Sachs Diseases: Implications for Neurodegenerative Mechanisms"
+        content: Published | PLOS ONE (IF=2.9, Q1) | 2025 | Citations: 2
+        url: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0319401
+        image: /images/publications/tay.jpg
         
       - title: "Enhancing Fetal Anomaly Detection in Ultrasonography Images: A Review of Machine Learning-Based Approaches"
-        content: Published | MDPI Biomimetics (IF=4.5, Q1) | 2023
+        content: Published | MDPI Biomimetics (IF=4.5, Q1) | 2023 | Citations: 30
         url: https://www.mdpi.com/2313-7673/8/7/519/htm
         image: /images/publications/fetal.png
         
-      - title: "Astrovirus: A Challenge for Humans, Animals, and the Environment"
-        content: Published | Journal of Infectious Diseases & Therapy (IF=2.47) | 2023
-        url: https://www.omicsonline.org/open-access/astrovirus-a-challenge-for-humans-animals-and-the-environment.pdf
-        image: /images/publications/AstV.png
-
-      - title: "Differential Gene Expression Patterns in Niemann-Pick Type C and Tay-Sachs Diseases: Implications for Neurodegenerative Mechanisms"
-        content: Published | PLOS ONE (IF=2.9, Q1) | 2025
-        image: /images/publications/tay.jpg
+      - title: "Smart Lipid-Based Nanoparticles in Lung Cancer Treatment: Current Status and Future Directions"
+        content: Published | Wiley's Advanced Therapeutics (IF=4.74, Q1) | 2023 | Citations: 17
+        url: https://onlinelibrary.wiley.com/doi/abs/10.1002/adtp.202300275
+        image: /images/publications/smartNP.png
         
       - title: "Detection of Major Structural Chromosomal Abnormalities in Human Karyotypes using Convolutional Neural Networks"
         content: Presented | 1st International Congress of Artificial Intelligence in Medical Sciences | Presenter | 2023
@@ -294,7 +285,7 @@ params:
           name: GitHub
           link: https://www.github.com/rahriver/Arch-Linux
         badges:
-          - "81 ⭐"
+          - "80 ⭐"
           - "Linux"
           - "Shell"
           - "Python"
