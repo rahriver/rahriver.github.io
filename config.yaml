@@ -169,8 +169,8 @@ params:
         companyUrl: "https://med.emory.edu/departments/urology/research/laboratories/yu-jindan/index.html"
         date: "Aug 2025 - Present"
         content: "Advisor: Dr. Jindan Yu. I conduct computational research on prostate, kidney, and EMPD cancers, employing cutting-edge methods such as single-cell RNA-seq, spatial transcriptomics, and ATAC-seq."
-      - job: "Teaching Assistant"
-        company: "Georgia Institute of Technology"
+      - job: "Georgia Institute of Technology"
+        company: "Teaching Assistant"
         companyUrl: "https://www.gatech.edu/"
         date: "Aug 2024 - Aug 2025"
         featuredLink:
