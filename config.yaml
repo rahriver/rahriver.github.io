@@ -164,19 +164,15 @@ params:
     enable: true
     title: "🔬 Experiences"
     items:
-      # - job: "Georgia Institute of Technology"
-      #   company: "Research Assistant (GTech)"
-      #   companyUrl: "https://bioinformatics.gatech.edu/welcome"
-      #   date: "Aug 2024 - Present"
-      #   featuredLink:
-      #     enable: false
-      #     name: "Storici Lab"
-      #     url: "https://storicilab.gatech.edu/people/graduate-students/"
-      #   content: "Advisor: Dr. Francesca Storici. Conducting research on the role of ribonucleotide monophsopates (rNMPs) in genome stability. Developing computational tools for analyzing data generated from Ribose-Seq method."
+      - job: "Emory School of Medicine"
+        company: "Research Assistant"
+        companyUrl: "https://med.emory.edu/departments/urology/research/laboratories/yu-jindan/index.html"
+        date: "Aug 2025 - Present"
+        content: "Advisor: Dr. Jindan Yu. I conduct computational research on prostate, kidney, and EMPD cancers, employing cutting-edge methods such as single-cell RNA-seq, spatial transcriptomics, and ATAC-seq."
       - job: "Teaching Assistant"
         company: "Georgia Institute of Technology"
         companyUrl: "https://www.gatech.edu/"
-        date: "Aug 2024 - Present"
+        date: "Aug 2024 - Aug 2025"
         featuredLink:
           enable: false
           name: "Webpage"
@@ -212,7 +208,20 @@ params:
           name: "School of Biological Sciences, Georgia Institute of Technology, Atlanta, GA"
           url: "https://bioinformatics.gatech.edu/welcome"
         date: "Aug 2024 - Aug 2029"
-        # GPA: ""
+        GPA: "4.0/4.0"
+ #        content: |-
+        featuredLink:
+          enable: false
+            # name: "Transcript of Grades"
+            # url: ""
+          download: true
+          newPage: true
+      - title: "MSc in Bioinformatics"
+        school:
+          name: "School of Biological Sciences, Georgia Institute of Technology, Atlanta, GA"
+          url: "https://bioinformatics.gatech.edu/welcome"
+        date: "Aug 2024 - Aug 2025"
+        GPA: "4.0/4.0"
  #        content: |-
         featuredLink:
           enable: false
