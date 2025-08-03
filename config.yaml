@@ -154,11 +154,12 @@ params:
       enable: true
       title: "Here are a few of my skills:"
       items:
-        - "Python (scikit-learn, PyTorch, NumPy, PyQt5)"
-        - "R (DESeq2, Shiny, Seurat, ggplot2)"
+        - "Python (scikit-learn, PyTorch, BioPython, PyQt5)"
+        - "R (DESeq2, Shiny, WGCNA, ggplot2)"
         - "Shell"
-        - "LaTeX"
         - "Linux"
+        - "PyMol"
+        - "LaTeX"
 
 # Experiences
   experience:
@@ -261,7 +262,7 @@ params:
         image: /images/publications/AstV.png
 
       - title: "Differential Gene Expression Patterns in Niemann-Pick Type C and Tay-Sachs Diseases: Implications for Neurodegenerative Mechanisms"
-        content: Published | PLOS ONE (IF=2.9, Q1) | 2025
+        content: Submitted | PLOS ONE (IF=2.9, Q1) | 2024
         image: /images/publications/tay.jpg
         
       - title: "Detection of Major Structural Chromosomal Abnormalities in Human Karyotypes using Convolutional Neural Networks"
@@ -286,7 +287,7 @@ params:
           name: GitHub
           link: https://www.github.com/rahriver/Arch-Linux
         badges:
-          - "81 ⭐"
+          - "77 ⭐"
           - "Linux"
           - "Shell"
           - "Python"
@@ -301,7 +302,7 @@ params:
           name: GitHub
           link: https://www.github.com/rahriver/rofi-noter
         badges:
-          - "30 ⭐"
+          - "29 ⭐"
           - "Shell"
           - "Linux"
         # links:
@@ -349,7 +350,7 @@ params:
           name: GitHub
           link: https://www.github.com/rahriver/Ankinator
         badges:
-          - "10 ⭐"
+          - "8 ⭐"
           - "Python"
           - "Anki"
 
